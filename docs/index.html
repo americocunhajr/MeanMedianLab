@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080e17">
+  <meta name="description" content="MeanMedianLab: an interactive mathematical companion exploring mean, median, centroid and volume bisectors for power-law sectional areas.">
+  <title>MeanMedianLab · Interactive Mean–Median Geometry</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <div class="wrap topline">
+      <a class="brand" href="./">MeanMedianLab</a>
+      <a class="toplink" href="https://github.com/americocunhajr/MeanMedianLab" rel="noopener noreferrer">GitHub repository</a>
+    </div>
+  </header>
+  <main class="wrap">
+    <p class="eyebrow">Interactive mathematics · Calculus · Probability · Mechanics</p>
+    <h1>MeanMedianLab</h1>
+    <p class="subtitle">Bisecting is not balancing.</p>
+    <p class="intro">A horizontal plane that divides a solid into two equal volumes need not pass through its centroid. Explore the mean and median heights for solids with sectional-area profile <span class="formula"><i>A</i>(<i>z</i>) = <i>Cz</i><sup><i>p</i></sup></span>.</p>
+    <p class="byline">An educational resource by <a href="https://americocunha.org">Americo Cunha Jr</a> · LNCC / UERJ</p>
+    <section class="panel" aria-label="Interactive mathematical model">
+      <div class="controls">
+        <label for="pexp">Exponent <i>p</i></label>
+        <input id="pexp" type="range" min="0" max="12" step="0.1" value="1" aria-describedby="phelp">
+        <output id="pout" for="pexp">1.0</output>
+      </div>
+      <div class="presets" aria-label="Geometry examples">
+        <button type="button" data-preset="0">Cylinder · p = 0</button>
+        <button type="button" data-preset="1">Paraboloid · p = 1</button>
+        <button type="button" data-preset="2">Cone · p = 2</button>
+      </div>
+      <p id="phelp" class="note">Change <i>p</i> with the slider or select a familiar geometry.</p>
+      <div class="stats" aria-live="polite">
+        <div class="stat mean"><span class="stat-label">Centroid / mean height</span><span id="meanv" class="stat-value">0.6667 H</span></div>
+        <div class="stat median"><span class="stat-label">Bisecting / median height</span><span id="medv" class="stat-value">0.7071 H</span></div>
+        <div class="stat"><span class="stat-label">Height difference / H</span><span id="gapv" class="stat-value">0.0404</span></div>
+        <div class="stat"><span class="stat-label">Volume below centroid</span><span id="fracv" class="stat-value">44.44%</span></div>
+      </div>
+      <figure class="chart">
+        <svg viewBox="0 0 900 435" role="img" aria-labelledby="chartTitle chartDesc">
+          <title id="chartTitle">Normalized height distribution</title>
+          <desc id="chartDesc">Probability density for height u=z/H. A blue dashed line marks the median and an orange dashed line marks the mean; the shaded area to the left of the median is one half.</desc>
+          <g id="axes"></g>
+          <path id="shade" fill="rgba(118,200,242,.19)" stroke="none"></path>
+          <path id="curve" fill="none" stroke="#e2ecf6" stroke-width="3" stroke-linecap="round"></path>
+          <line id="ml" stroke="#f7af7a" stroke-width="2.8" stroke-dasharray="7 6"></line>
+          <line id="ql" stroke="#76c8f2" stroke-width="2.8" stroke-dasharray="7 6"></line>
+          <g id="labels"></g>
+        </svg>
+        <figcaption>The shaded region contains one half of the probability. The horizontal axis is normalized height <i>u = z/H</i>; its density is <i>f</i><sub>U</sub>(<i>u</i>) = (<i>p</i>+1)<i>u</i><sup><i>p</i></sup>.</figcaption>
+      </figure>
+      <div class="legend">
+        <span><span class="line orange"></span>Centroid / mean</span>
+        <span><span class="line blue"></span>Volume bisector / median</span>
+      </div>
+      <p class="note" id="geometryNote"></p>
+      <p class="note"><strong>Exact relations:</strong> mean/H = (p+1)/(p+2), median/H = 2<sup>−1/(p+1)</sup>, and fraction below mean = ((p+1)/(p+2))<sup>p+1</sup>.</p>
+    </section>
+    <section class="further-reading" aria-labelledby="about-title">
+      <h2 id="about-title">About this experiment</h2>
+      <p>For a homogeneous solid of height <i>H</i> whose horizontal sectional area is <i>A</i>(<i>z</i>) = <i>Cz</i><sup><i>p</i></sup>, the centroid is the mean height and the volume-bisecting plane lies at the median height. The case <i>p</i> = 1 includes a truncated paraboloid; <i>p</i> = 2 includes a cone. For <i>p</i> &gt; 2, the area profile is mathematically valid but cannot come from a three-dimensional convex solid.</p>
+      <p>This laboratory is a companion to the expository manuscript <cite>Bisecting Is Not Balancing: Means, Medians, and a Paraboloid</cite>. Source code, mathematical notes, and citation information are maintained in the <a href="https://github.com/americocunhajr/MeanMedianLab">MeanMedianLab repository</a>.</p>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">
+      <span>Americo Cunha Jr. · LNCC · UERJ</span>
+      <span>Open educational resource · MIT License</span>
+    </div>
+  </footer>
+    <script src="assets/js/model.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>

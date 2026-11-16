@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">MeanMedianLab dark cover</title>
+<desc id="desc">Blue median and orange mean lines over the normalized height distribution for a paraboloid</desc>
+<rect width="1200" height="675" fill="#080e17"/>
+<rect x="60" y="50" width="1080" height="575" rx="22" fill="#101b29" stroke="#293b4c" stroke-width="2"/>
+<text x="110" y="123" fill="#76c8f2" font-family="Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="2">INTERACTIVE MATHEMATICS</text>
+<text x="110" y="199" fill="#eaf1f8" font-family="Georgia,serif" font-size="64">MeanMedianLab</text>
+<text x="112" y="238" fill="#a1b0c1" font-family="Arial,sans-serif" font-size="26">Bisecting is not balancing.</text>
+<rect x="110" y="280" width="980" height="280" rx="14" fill="#0b1522" stroke="#293b4c"/>
+<g stroke="#2b3c4d" stroke-width="1">
+<path d="M174 330V507H1030"/><path d="M174 463H1030M174 418H1030M174 374H1030" stroke-dasharray="3 6"/>
+</g>
+<path d="M174 507 L174 507 L222 493 L270 479 L318 465 L366 451 L414 437 L462 423 L510 409 L558 395 L606 381 L654 367 L702 353 L750 339 L798 325 L846 311 L894 297 L942 283 L990 269" fill="none" stroke="#e2ecf6" stroke-width="4" transform="translate(0,32)"/>
+<path d="M174 507 L222 493 L270 479 L318 465 L366 451 L414 437 L462 423 L510 409 L558 395 L606 381 L654 367 L702 353 L750 339 L798 325 L846 311 L894 297 L942 283 L990 269 L990 507 Z" fill="#76c8f2" fill-opacity=".06" transform="translate(0,32)"/>
+<line x1="718" y1="318" x2="718" y2="507" stroke="#f7af7a" stroke-width="4" stroke-dasharray="10 9"/>
+<line x1="749" y1="318" x2="749" y2="507" stroke="#76c8f2" stroke-width="4" stroke-dasharray="10 9"/>
+<text x="698" y="302" text-anchor="end" fill="#f7af7a" font-family="Arial,sans-serif" font-size="20">mean 0.667</text>
+<text x="765" y="302" fill="#76c8f2" font-family="Arial,sans-serif" font-size="20">median 0.707</text>
+<text x="110" y="595" fill="#a1b0c1" font-family="Arial,sans-serif" font-size="18">Americo Cunha Jr · LNCC / UERJ</text>
+</svg>

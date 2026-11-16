@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use MeanMedianLab, cite this educational resource and the associated article once published."
+title: "MeanMedianLab: Interactive Mean–Median Geometry"
+type: software
+version: "1.0.0"
+authors:
+  - family-names: "Cunha Jr"
+    given-names: "Americo"
+    orcid: "https://orcid.org/0000-0002-8342-0363"
+repository-code: "https://github.com/americocunhajr/MeanMedianLab"
+url: "https://americocunhajr.github.io/MeanMedianLab/"
+license: "MIT"
+abstract: "Interactive web companion to an expository article on centroid heights, median planes, and power-law cross-sectional areas."
+keywords:
+  - mean
+  - median
+  - centroid
+  - volume bisector
+  - probability
+  - interactive mathematics

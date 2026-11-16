@@ -1,0 +1,14 @@
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Browser tooling
+node_modules/
+playwright-report/
+test-results/
+
+# Temporary and generated files
+*.log
+*.tmp
+__pycache__/
+*.pyc

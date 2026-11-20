@@ -1,0 +1,35 @@
+/* Additive styles for the extended MeanMedianLab experiments. */
+.lab-navigation{display:flex;align-items:center;flex-wrap:wrap;gap:10px 16px;margin:25px 0 3px;border-top:1px solid var(--border);padding-top:19px;font-size:13px}
+.lab-navigation span{color:var(--muted);font-weight:650}
+.lab-navigation a{color:var(--text);text-decoration:none;border-bottom:1px solid var(--border);padding-bottom:2px}
+.lab-navigation a:hover,.lab-navigation a:focus-visible{color:var(--blue);border-bottom-color:var(--blue)}
+.lab-section{scroll-margin-top:16px}
+.lab-section h2{font:500 clamp(25px,3.4vw,37px)/1.18 Georgia,serif;margin:0 0 12px;letter-spacing:-.025em}
+.lab-section>p:not(.lab-kicker):not(.lab-insight):not(.lab-equation){max-width:760px;color:var(--muted);font-size:15px;margin:0 0 18px}
+.lab-kicker{color:var(--blue);font-weight:750;letter-spacing:.12em;font-size:11px;text-transform:uppercase;margin:0 0 9px}
+.lab-slider-row{display:flex;gap:14px;align-items:center;margin:16px 0 8px}
+.lab-slider-row label{font-size:13px;font-weight:650;min-width:115px}
+.lab-slider-row output{font-size:18px;min-width:60px}
+.lab-three-sliders{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:17px 0}
+.lab-three-sliders>div{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:7px 8px;align-items:center;border:1px solid var(--border);border-radius:10px;background:var(--surface-alt);padding:12px}
+.lab-three-sliders label{grid-column:1/-1;font-weight:650;font-size:13px}
+.lab-three-sliders output{min-width:45px;font-size:15px}
+.lab-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:22px 0 17px}
+.lab-metrics .stat{min-width:0}
+.lab-metrics .stat-value{font-size:clamp(17px,2.35vw,22px);overflow-wrap:anywhere}
+.lab-chart-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.lab-chart{margin:0;padding:12px 9px;background:#0b1522;border:1px solid var(--border);border-radius:11px;min-width:0}
+.lab-chart h3{margin:0 8px 8px;font-size:14px;color:var(--text);font-weight:650}
+.lab-chart svg{display:block;width:100%;height:auto}
+.lab-chart figcaption{font-size:12px;padding:5px 8px}
+.lab-insight{background:var(--surface-alt);border-left:3px solid var(--blue);border-radius:0 7px 7px 0;padding:12px 14px;color:var(--text);font-size:14px;margin:18px 0 0}
+.lab-equation{color:var(--muted);font-size:13px;margin:15px 0 0}
+.lab-mechanics-controls{margin-top:18px;display:flex;gap:22px;flex-wrap:wrap;align-items:center}
+.lab-mechanics-controls>div:first-child{display:flex;gap:9px;align-items:center}
+.lab-mechanics-controls label{font-size:13px;font-weight:650}
+.lab-mechanics-controls select{color:var(--text);background:var(--surface-alt);border:1px solid var(--border);border-radius:7px;padding:8px 10px;max-width:100%}
+.lab-mechanics-controls .lab-slider-row{flex:1;margin:0}
+.lab-blue{color:var(--blue)}.lab-orange{color:var(--orange)}
+.lab-section input:disabled{opacity:.35;cursor:not-allowed}
+@media(max-width:720px){.lab-chart-grid{grid-template-columns:1fr}.lab-three-sliders{grid-template-columns:1fr}.lab-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.lab-slider-row{gap:8px}.lab-slider-row label{min-width:99px}.lab-section{padding:18px}.lab-mechanics-controls{display:grid}}
+@media(max-width:380px){.lab-metrics{grid-template-columns:1fr}.lab-slider-row{flex-wrap:wrap}.lab-three-sliders>div{padding:8px}}

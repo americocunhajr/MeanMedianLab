@@ -4,8 +4,7 @@
 the difference between the centroid (mean height) of a homogeneous solid and
 the horizontal plane that divides its volume into two equal parts (median height).
 
-The laboratory is the online companion to *Bisecting Is Not Balancing: Means,
-Medians, and a Paraboloid*, an expository manuscript by Americo Cunha Jr.
+The laboratory is the online companion to *Bisecting Is Not Balancing: How Far Apart?*, an expository manuscript by Americo Cunha Jr.
 
 <p align="center">
   <img src="docs/assets/img/MeanMedianLab-Cover.svg" alt="MeanMedianLab interactive dashboard" width="80%">
@@ -14,7 +13,7 @@ Medians, and a Paraboloid*, an expository manuscript by Americo Cunha Jr.
 **Interactive website:** https://americocunhajr.github.io/MeanMedianLab/  
 **Repository:** https://github.com/americocunhajr/MeanMedianLab
 
-> The website link becomes active after GitHub Pages is enabled for this repository.
+> The site is published from the repository root with GitHub Pages.
 
 ## Table of Contents
 
@@ -39,6 +38,12 @@ this geometric distinction quantitative and visible, without requiring any
 server-side computation.
 
 ## Features
+
+- Three additional interactive panels alongside the original power-law explorer:
+  - Conical frustums and the sharp three-dimensional mean–median bound.
+  - Quadratic sectional areas, the endpoint sign rule, and a cubic counterexample.
+  - Mechanical balance, volume bisection, and the distinct absolute/squared loss minima.
+- Deterministic analytic calculations with a tested median solver.
 
 - Interactive exponent control for $0\le p\le 12$.
 - Presets for the cylinder ($p=0$), paraboloid or wedge ($p=1$), and cone or pyramid ($p=2$).
@@ -85,7 +90,7 @@ git clone https://github.com/americocunhajr/MeanMedianLab.git
 cd MeanMedianLab
 ```
 
-Open `docs/index.html` directly in a modern browser, or serve the `docs/`
+Open `index.html` directly in a modern browser, or serve the `docs/`
 folder locally:
 
 ```bash
@@ -97,8 +102,8 @@ Then open http://localhost:8000/ and adjust the exponent slider.
 ### GitHub Pages
 
 In repository **Settings → Pages**, select **Deploy from a branch**, branch
-`main`, and folder `/docs`, then save. The site will be available at the URL
-shown above after GitHub completes deployment. The `docs/.nojekyll` file
+`main`, and folder `/ (root)`, then save. The site will be available at the URL
+shown above after GitHub completes deployment. The root `.nojekyll` file
 ensures the site is served without Jekyll processing.
 
 ## Repository structure
@@ -177,5 +182,4 @@ UERJ — Universidade do Estado do Rio de Janeiro
 
 ## Funding
 
-This work acknowledges support from CAPES (Finance Code 001), CNPq
-(grants 305476/2022-0 and 406148/2022-8), and FAPERJ (grant 204.477/2024).
+This work acknowledges support from CNPq (grant 303324/2026-0), CAPES (Finance Code 001), and FAPERJ (grant 204.477/2024).

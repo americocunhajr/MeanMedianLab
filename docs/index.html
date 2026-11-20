@@ -4,9 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#080e17">
-  <meta name="description" content="MeanMedianLab: an interactive mathematical companion exploring mean, median, centroid and volume bisectors for power-law sectional areas.">
+  <meta name="description" content="MeanMedianLab: an interactive mathematical companion exploring mean, median, centroid and volume bisectors for power-law, frustum, and polynomial sectional areas.">
   <title>MeanMedianLab · Interactive Mean–Median Geometry</title>
     <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/extended-labs.css">
 </head>
 <body>
   <header>
@@ -21,7 +22,7 @@
     <p class="subtitle">Bisecting is not balancing.</p>
     <p class="intro">A horizontal plane that divides a solid into two equal volumes need not pass through its centroid. Explore the mean and median heights for solids with sectional-area profile <span class="formula"><i>A</i>(<i>z</i>) = <i>Cz</i><sup><i>p</i></sup></span>.</p>
     <p class="byline">An educational resource by <a href="https://americocunha.org">Americo Cunha Jr</a> · LNCC / UERJ</p>
-    <section class="panel" aria-label="Interactive mathematical model">
+    <section class="panel" id="power-law-lab" aria-label="Interactive mathematical model">
       <div class="controls">
         <label for="pexp">Exponent <i>p</i></label>
         <input id="pexp" type="range" min="0" max="12" step="0.1" value="1" aria-describedby="phelp">
@@ -59,10 +60,11 @@
       <p class="note" id="geometryNote"></p>
       <p class="note"><strong>Exact relations:</strong> mean/H = (p+1)/(p+2), median/H = 2<sup>−1/(p+1)</sup>, and fraction below mean = ((p+1)/(p+2))<sup>p+1</sup>.</p>
     </section>
+    <div id="extended-labs"></div>
     <section class="further-reading" aria-labelledby="about-title">
       <h2 id="about-title">About this experiment</h2>
       <p>For a homogeneous solid of height <i>H</i> whose horizontal sectional area is <i>A</i>(<i>z</i>) = <i>Cz</i><sup><i>p</i></sup>, the centroid is the mean height and the volume-bisecting plane lies at the median height. The case <i>p</i> = 1 includes a truncated paraboloid; <i>p</i> = 2 includes a cone. For <i>p</i> &gt; 2, the area profile is mathematically valid but cannot come from a three-dimensional convex solid.</p>
-      <p>This laboratory is a companion to the expository manuscript <cite>Bisecting Is Not Balancing: Means, Medians, and a Paraboloid</cite>. Source code, mathematical notes, and citation information are maintained in the <a href="https://github.com/americocunhajr/MeanMedianLab">MeanMedianLab repository</a>.</p>
+      <p>This laboratory is a companion to the expository manuscript <cite>Bisecting Is Not Balancing: How Far Apart?</cite>. Source code, mathematical notes, and citation information are maintained in the <a href="https://github.com/americocunhajr/MeanMedianLab">MeanMedianLab repository</a>.</p>
     </section>
   </main>
   <footer>
@@ -73,5 +75,6 @@
   </footer>
     <script src="assets/js/model.js" defer></script>
   <script src="assets/js/app.js" defer></script>
+  <script src="assets/js/extended-labs.js" defer></script>
 </body>
 </html>

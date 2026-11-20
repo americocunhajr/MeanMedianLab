@@ -1,0 +1,6 @@
+/* Additive styling for the numerical discovery experiment. */
+.lab-num-details{display:flex;flex-wrap:wrap;gap:8px 20px;margin:15px 0;color:var(--muted);font-size:13px;font-variant-numeric:tabular-nums}
+.lab-num-details strong{color:var(--text)}
+#numerical-experiment{scroll-margin-top:16px}
+#numerical-experiment h2{font:500 clamp(25px,3.4vw,37px)/1.18 Georgia,serif;margin:0 0 12px;letter-spacing:-.025em}
+#numerical-experiment>p:not(.lab-kicker):not(.lab-insight):not(.lab-equation){max-width:760px;color:var(--muted);font-size:15px}

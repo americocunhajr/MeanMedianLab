@@ -39,11 +39,13 @@ server-side computation.
 
 ## Features
 
-- Three additional interactive panels alongside the original power-law explorer:
+- Four additional interactive panels alongside the original power-law explorer:
   - Conical frustums and the sharp three-dimensional mean–median bound.
   - Quadratic sectional areas, the endpoint sign rule, and a cubic counterexample.
   - Mechanical balance, volume bisection, and the distinct absolute/squared loss minima.
+  - Numerical frustum optimization: grid sampling, golden-section refinement, convergence diagnostics, and comparison with the certified optimum.
 - Deterministic analytic calculations with a tested median solver.
+- Numerical exploration uses a uniform grid and bounded golden-section search; it illustrates, but does not prove, the sharp inequality.
 
 - Interactive exponent control for $0\le p\le 12$.
 - Presets for the cylinder ($p=0$), paraboloid or wedge ($p=1$), and cone or pyramid ($p=2$).
@@ -122,7 +124,9 @@ MeanMedianLab/
 │       ├── img/MeanMedianLab-Cover.svg
 │       └── js/
 │           ├── model.js
-│           └── app.js
+│           ├── app.js
+│           ├── extended-labs.js
+│           └── numerical-experiment.js
 ├── tests/
 │   └── model.test.js
 └── publications/

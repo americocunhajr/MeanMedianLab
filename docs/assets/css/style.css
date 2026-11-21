@@ -69,13 +69,28 @@
     a:focus-visible,button:focus-visible,input:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
     .sr-only { position: absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
 
-    /* MeanMedianLab identity: the same paraboloid icon as the browser favicon. */
-    .hero-identity { display: flex; align-items: center; gap: 20px; }
-    .hero-identity__icon { display: block; flex: 0 0 auto; width: 88px; height: 88px; object-fit: contain; }
-    .hero-identity__text { min-width: 0; }
+    /* Two-column identity: the paraboloid is always LEFT of the title. */
+    .hero-identity {
+      display: grid;
+      grid-template-columns: 88px minmax(0, 1fr);
+      grid-template-areas: "icon heading";
+      align-items: center;
+      column-gap: 20px;
+    }
+    .hero-identity__icon {
+      grid-area: icon;
+      display: block;
+      width: 88px;
+      height: 88px;
+      object-fit: contain;
+    }
+    .hero-identity__text {
+      grid-area: heading;
+      min-width: 0;
+    }
     .hero-identity .subtitle { margin: 2px 0 0; }
     @media (max-width: 520px) {
-      .hero-identity { gap: 12px; }
+      .hero-identity { grid-template-columns: 56px minmax(0, 1fr); column-gap: 12px; }
       .hero-identity__icon { width: 56px; height: 56px; }
       .hero-identity h1 { font-size: clamp(25px, 7vw, 34px); }
       .hero-identity .subtitle { font-size: clamp(15px, 4vw, 19px); }

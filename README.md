@@ -180,11 +180,12 @@ expository manuscript. No article DOI is assigned here before publication.
 
 **MeanMedianLab** is released under the MIT license, consistent with several of the author's software repositories. See [LICENSE](LICENSE) for details.
 
-## Institutional support
+<img src="logo/mit_license_red.png" width="10%"> 
 
-LNCC — Laboratório Nacional de Computação Científica  
-UERJ — Universidade do Estado do Rio de Janeiro
+### Institutional support
 
-## Funding
+<img src="logo/logo_lncc.png" width="25%"> &nbsp; &nbsp; &nbsp; <img src="logo/logo_uerj.png" width="10%"> 
 
-This work acknowledges support from CNPq (grant 303324/2026-0), CAPES (Finance Code 001), and FAPERJ (grant 204.477/2024).
+### Funding
+
+<img src="logo/faperj.png" width="25%"> &nbsp; &nbsp; <img src="logo/cnpq.png" width="20%"> &nbsp; &nbsp; <img src="logo/capes.png" width="10%">

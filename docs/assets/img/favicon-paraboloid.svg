@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">MeanMedianLab — paraboloid, median and mean</title>
+  <desc id="desc">An upward-opening paraboloid in white, with a cyan upper section for the median and an orange lower section for the mean.</desc>
+  <defs>
+    <linearGradient id="bowl" x1="0" y1="0" x2=".92" y2="1">
+      <stop offset="0" stop-color="#72aef1" stop-opacity=".21"/>
+      <stop offset=".6" stop-color="#72aef1" stop-opacity=".09"/>
+      <stop offset="1" stop-color="#72aef1" stop-opacity=".03"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="51" fill="#091424"/>
+  <path d="M 38 66 C 56 130 87 218 128 219 C 169 218 200 130 218 66 L 38 66 Z" fill="url(#bowl)"/>
+  <path d="M 38 66 C 56 130 87 218 128 219 C 169 218 200 130 218 66" fill="none" stroke="#f1f6fc" stroke-width="7" stroke-linecap="round"/>
+  <ellipse cx="128" cy="66" rx="90" ry="23" fill="#0b1e34" stroke="#f1f6fc" stroke-width="7"/>
+  <!-- Cyan median lies above orange mean. -->
+  <path d="M 52 111 Q 128 129 204 111" fill="none" stroke="#76c8f2" stroke-width="8" stroke-linecap="round"/>
+  <path d="M 60 131 Q 128 149 196 131" fill="none" stroke="#f7af7a" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="128" cy="120" r="6" fill="#76c8f2" stroke="#091424" stroke-width="2"/>
+  <circle cx="128" cy="139" r="6" fill="#f7af7a" stroke="#091424" stroke-width="2"/>
+</svg>

@@ -10,7 +10,8 @@ The laboratory is the online companion to *Bisecting Is Not Balancing: How Far A
   <img src="docs/assets/img/MeanMedianLab-Cover.svg" alt="MeanMedianLab interactive dashboard" width="80%">
 </p>
 
-**Interactive website:** americocunha.org/MeanMedianLab 
+**Interactive website:** https://americocunha.org/MeanMedianLab 
+
 **Repository:** https://github.com/americocunhajr/MeanMedianLab
 
 > The site is published from the repository root with GitHub Pages.

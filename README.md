@@ -4,7 +4,7 @@
 the difference between the centroid (mean height) of a homogeneous solid and
 the horizontal plane that divides its volume into two equal parts (median height).
 
-The laboratory is the online companion to *Bisecting Is Not Balancing: How Far Apart?*, an expository manuscript by Americo Cunha Jr.
+The laboratory is the online companion to *Bisecting Is Not Balancing: Means, Medians, and a Paraboloid*, an expository manuscript by Americo Cunha Jr.
 
 <p align="center">
   <img src="docs/assets/img/MeanMedianLab-Cover.svg" alt="MeanMedianLab interactive dashboard" width="80%">
@@ -125,24 +125,35 @@ from the visual presentation for inspection and reuse.
 
 ## Citation
 
-If **MeanMedianLab** contributes to teaching or research, please cite:
+If MeanMedianLab contributes to your teaching or research, please cite the
+accompanying manuscript (not the website):
 
-> A. Cunha Jr, *MeanMedianLab: Interactive Mean–Median Geometry*,
-> GitHub repository, 2026.
+> A. Cunha Jr (2026), *Bisecting Is Not Balancing: Means, Medians, and a Paraboloid*. Manuscript.
 
 ```bibtex
-@misc{CunhaJr2026MeanMedianLab,
-  author       = {A. {Cunha~Jr}},
-  title        = {{MeanMedianLab}: Interactive Mean--Median Geometry},
-  year         = {2026},
-  howpublished = {GitHub repository},
-  url          = {https://github.com/americocunhajr/MeanMedianLab},
+@unpublished{CunhaJr2026Bisecting,
+  author = {Cunha Jr, Americo},
+  title  = {Bisecting Is Not Balancing: Means, Medians, and a Paraboloid},
+  year   = {2026},
+  note   = {Manuscript}
 }
 ```
 
-A `CITATION.cff` file is provided for GitHub's **Cite this repository** feature.
-See [publications/README.md](publications/README.md) for the associated
-expository manuscript. No article DOI is assigned here before publication.
+The bibliography will be updated once publication details are available.
+The repository's `CITATION.cff` provides separate software metadata for GitHub's citation tooling.
+
+## Search discovery
+
+The canonical public URL is https://americocunha.org/MeanMedianLab/.
+The static [mathematical explanation](mean-median-paraboloid.html) is linked
+from the main website, and [sitemap.xml](sitemap.xml) lists the canonical pages.
+Equivalent files also exist in `docs/` for alternate GitHub Pages deployments.
+
+Site ownership is required to verify Google Search Console and Bing Webmaster
+Tools, submit the sitemap, and inspect indexing status. For the custom domain,
+crawler rules must be in `https://americocunha.org/robots.txt` (the domain
+root), **not** solely in `/MeanMedianLab/robots.txt`. The site files in this
+repository cannot set that domain-root policy.
 
 ## License
 

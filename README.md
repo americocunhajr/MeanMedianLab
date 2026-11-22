@@ -84,31 +84,6 @@ The family represents valid nonnegative sectional-area functions for all
 $p\ge0$, although profiles with $p>2$ cannot belong to a convex solid
 in three dimensions.
 
-## Usage
-
-Clone the repository:
-
-```bash
-git clone https://github.com/americocunhajr/MeanMedianLab.git
-cd MeanMedianLab
-```
-
-Open `index.html` directly in a modern browser, or serve the `docs/`
-folder locally:
-
-```bash
-python -m http.server 8000 --directory docs
-```
-
-Then open http://localhost:8000/ and adjust the exponent slider.
-
-### GitHub Pages
-
-In repository **Settings → Pages**, select **Deploy from a branch**, branch
-`main`, and folder `/ (root)`, then save. The site will be available at the URL
-shown above after GitHub completes deployment. The root `.nojekyll` file
-ensures the site is served without Jekyll processing.
-
 ## Repository structure
 
 ```text

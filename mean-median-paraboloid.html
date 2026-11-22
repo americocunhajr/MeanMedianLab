@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080e17">
+  <title>Centroid vs Volume Bisector of a Paraboloid | MeanMedianLab</title>
+  <meta name="description" content="Derive the centroid height 2H/3 and median height H/sqrt(2) for a paraboloid. Understand why the plane bisecting volume differs from the center of mass.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://americocunha.org/MeanMedianLab/mean-median-paraboloid.html">
+  <link rel="stylesheet" href="docs/assets/css/style.css">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Mean, Median and Centroid of a Paraboloid">
+  <meta property="og:description" content="A mathematical explanation of why bisecting volume is not balancing mass.">
+  <meta property="og:url" content="https://americocunha.org/MeanMedianLab/mean-median-paraboloid.html">
+  <meta property="og:image" content="https://americocunha.org/MeanMedianLab/docs/assets/img/MeanMedianLab-Cover.svg">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Mean, Median and Centroid of a Paraboloid: A Geometric Derivation",
+  "description": "Derivation of centroid and volume-bisecting heights for a paraboloid and power-law sectional areas.",
+  "author": {
+    "@type": "Person",
+    "name": "Americo Cunha Jr",
+    "url": "https://americocunha.org/"
+  },
+  "mainEntityOfPage": "https://americocunha.org/MeanMedianLab/mean-median-paraboloid.html",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "MeanMedianLab",
+    "url": "https://americocunha.org/MeanMedianLab/"
+  },
+  "inLanguage": "en"
+}
+  </script>
+</head>
+<body>
+  <header><div class="wrap topline"><a class="brand" href="./">MeanMedianLab</a><a class="toplink" href="./">Interactive laboratory</a></div></header>
+  <main class="wrap">
+    <p class="eyebrow">Mathematical explanation · Geometry · Probability</p>
+    <h1>Mean, median and centroid of a paraboloid</h1>
+    <p class="intro">A horizontal plane cutting a homogeneous solid into equal volumes need not pass through its centroid. The centroid is a mean; the volume-bisecting plane is a median. These two statistical functionals generally differ.</p>
+    <section class="info-section" aria-labelledby="model"><h2 id="model">Sectional-area model</h2>
+      <p>Let a solid of height <i>H</i> &gt; 0 have nonnegative horizontal cross-sectional area <i>A</i>(<i>z</i>) for 0 ≤ <i>z</i> ≤ <i>H</i>. Assume uniform mass density and positive total volume <i>V</i> = ∫<sub>0</sub><sup><i>H</i></sup> <i>A</i>(<i>z</i>) d<i>z</i>. The height <i>Z</i> of a uniformly sampled point in the solid has probability density <i>f</i><sub>Z</sub>(<i>z</i>) = <i>A</i>(<i>z</i>)/<i>V</i>.</p>
+      <p>The centroid height is the mean <i>z̄</i> = (1/<i>V</i>) ∫<sub>0</sub><sup><i>H</i></sup> <i>zA</i>(<i>z</i>) d<i>z</i>. A volume-bisecting plane is located at height <i>m</i> satisfying ∫<sub>0</sub><sup><i>m</i></sup> <i>A</i>(<i>z</i>) d<i>z</i> = <i>V</i>/2. Thus, <i>z̄</i> and <i>m</i> are respectively the mean and a median of <i>Z</i>.</p>
+    </section>
+    <section class="info-section" aria-labelledby="power-law"><h2 id="power-law">Exact result for power-law sections</h2>
+      <p>Suppose <i>A</i>(<i>z</i>) = <i>Cz</i><sup><i>p</i></sup>, with <i>C</i> &gt; 0 and <i>p</i> ≥ 0. Then <i>V</i> = <i>CH</i><sup><i>p</i>+1</sup>/(<i>p</i>+1). For <i>U</i> = <i>Z</i>/<i>H</i>, its cumulative distribution is <i>F</i><sub><i>U</i></sub>(<i>u</i>) = <i>u</i><sup><i>p</i>+1</sup>, 0 ≤ <i>u</i> ≤ 1.</p>
+      <p>Direct integration yields the normalized centroid and median heights:</p>
+      <p class="citation-example" style="font-size:1.2rem;text-align:center"><strong>z̄/H = (p + 1)/(p + 2) &nbsp;&nbsp; and &nbsp;&nbsp; m/H = 2<sup>−1/(p + 1)</sup>.</strong></p>
+      <p>The fraction of volume below the centroid plane is <i>F</i><sub><i>U</i></sub>(<i>z̄</i>/<i>H</i>) = [(<i>p</i>+1)/(<i>p</i>+2)]<sup><i>p</i>+1</sup>, which need not equal 1/2.</p>
+    </section>
+    <section class="info-section" aria-labelledby="paraboloid"><h2 id="paraboloid">A paraboloid of revolution</h2>
+      <p>Consider a paraboloid with its vertex at <i>z</i> = 0 and upper plane at <i>z</i> = <i>H</i>. Since the squared radius of a horizontal section is proportional to <i>z</i>, its sectional area is proportional to <i>z</i>: this is the case <i>p</i> = 1.</p>
+      <p class="citation-example" style="font-size:1.2rem;text-align:center"><strong>Centroid: z̄ = 2H/3 &nbsp;&nbsp; Volume bisector: m = H/√2.</strong></p>
+      <p>Consequently, the volume below the centroid is (2/3)<sup>2</sup> = 4/9 of the total volume, not one half. The volume-bisecting plane lies above the centroid: <i>m</i> − <i>z̄</i> = <i>H</i>(1/√2 − 2/3) ≈ 0.04044<i>H</i>.</p>
+      <p>The mean balances the first moment of volume around a horizontal plane; the median divides volume into equal halves. Equal volume is not equivalent to equal moment.</p>
+    </section>
+    <section class="info-section" aria-labelledby="comparison"><h2 id="comparison">Comparison with other solids</h2>
+      <p>For a cylinder (<i>p</i> = 0), the mean and median coincide at <i>H</i>/2. For a cone with vertex at <i>z</i> = 0 (<i>p</i> = 2), the centroid is at 3<i>H</i>/4, while the volume bisector is at 2<sup>−1/3</sup><i>H</i>. The height distribution, rather than the visual midpoint, determines each plane.</p>
+      <p>The power-law density remains meaningful for <i>p</i> &gt; 2, but such a profile cannot arise from a three-dimensional convex solid. The interactive laboratory also examines frustums and more general sectional-area functions.</p>
+    </section>
+    <section class="info-section" aria-labelledby="explore"><h2 id="explore">Explore the geometry interactively</h2>
+      <p><a href="./">Open MeanMedianLab</a> to vary the exponent, compare centroid and median heights, and inspect the corresponding volume fractions. The laboratory accompanies the manuscript <cite>Bisecting Is Not Balancing: Means, Medians, and a Paraboloid</cite>, by Americo Cunha Jr (2026).</p>
+      <p>Source code and reproducibility notes: <a href="https://github.com/americocunhajr/MeanMedianLab">MeanMedianLab GitHub repository</a>.</p>
+    </section>
+  </main>
+  <footer><div class="wrap"><span>Americo Cunha Jr. · LNCC · UERJ</span><span>MeanMedianLab · Open educational resource</span></div></footer>
+</body>
+</html>

@@ -123,13 +123,6 @@ No stochastic sampling is involved: the results are deterministic and
 reproducible across modern browsers. Model functions are kept separate
 from the visual presentation for inspection and reuse.
 
-## Author
-
-**Americo Cunha Jr**  
-Laboratório Nacional de Computação Científica (LNCC)  
-Universidade do Estado do Rio de Janeiro (UERJ), Brazil  
-https://americocunha.org
-
 ## Citation
 
 If **MeanMedianLab** contributes to teaching or research, please cite:
@@ -164,3 +157,8 @@ expository manuscript. No article DOI is assigned here before publication.
 ### Funding
 
 <img src="logo/faperj.png" width="25%"> &nbsp; &nbsp; <img src="logo/cnpq.png" width="20%"> &nbsp; &nbsp; <img src="logo/capes.png" width="10%">
+
+
+## Author
+
+**Americo Cunha Jr.** is Research Faculty at the National Laboratory for Scientific Computing (LNCC) and Professor of Applied and Computational Mathematics at Rio de Janeiro State University (UERJ), Brazil. See [his academic website](https://americocunha.org/).
